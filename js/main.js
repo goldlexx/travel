@@ -1,9 +1,10 @@
 const owl = $('.owl-carousel');
+
 owl.owlCarousel({
   center: true,
   loop: true,
   margin: 30,
-  starPosition: 1,
+  startPosition: 1,
   items: 3,
 });
 
