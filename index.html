@@ -10,10 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <meta name="author" content="Руслан Юлдашев" />
+  <meta name="description" content="Страница про путешествия" />
+  <meta name="keywords" content="Путешествия, travel" />
 </head>
 
 <body>
-  <header class="header none">
+  <header class="header">
     <div class="container">
       <div class="header__top">
         <nav class="nav">
@@ -21,18 +24,19 @@
             <h2 class="logo"><a href="#!">GoTrip</a></h2>
           </div>
 
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--header">
             <li><a href="#!" class="active">Home</a></li>
             <li><a href="#!">Services</a></li>
             <li><a href="#!">Pricing</a></li>
             <li><a href="#!">Contact</a></li>
           </ul>
 
-          <ul class="nav__login">
+          <ul class="nav__login nav__login--header">
             <li><a href="#!">Sign up</a></li>
             <li><a href="#!" class="btn btn--login">Login</a></li>
           </ul>
-          <button class="nav__toggle" type="button">
+
+          <button type="button" class="nav__toggle">
             <div class="menu-icon-wrapper">
               <div class="menu-icon"></div>
             </div>
@@ -57,8 +61,9 @@
     </div>
   </header>
 
-  <main>
-    <section class="destinations ">
+  <main class="">
+
+    <section class="destinations">
       <div class="container-right">
         <div class="destinations__row">
           <div class="destinations__content">
@@ -91,16 +96,16 @@
       </div>
     </section>
 
-    <section class="customers none">
+    <section class="customers">
       <div class="container">
         <div class="customers__row">
           <div class="customers__img">
             <img src="./img/customers/customers.jpg" alt="Customer" />
           </div>
           <div class="customers__content">
-            <h2 class="customers__title">What do customers say about us?</h2>
+            <h2 class="customers__title">What do customers say about&nbsp;us?</h2>
 
-            <div class="review none">
+            <div class="review">
               <div class="review__client">
                 <div class="review__client-avatar">
                   <img src="./img/customers//user-avatar.png" alt="Avatar" />
@@ -140,7 +145,7 @@
       </div>
     </section>
 
-    <section class="subscribe none">
+    <section class="subscribe">
       <div class="container">
         <div class="subscribe__content">
           <h2 class="subscribe__title">Subscribe To Our Newsletter</h2>
@@ -152,11 +157,12 @@
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer none">
+  <footer class="footer">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav nav--footer">
         <div class="nav__logo">
           <h2 class="logo logo--footer"><a href="#!">GoTrip</a></h2>
         </div>
@@ -168,7 +174,7 @@
           <li><a href="#!">Contact</a></li>
         </ul>
 
-        <ul class="nav__login">
+        <ul class="nav__login nav__login--footer">
           <li><a href="#!">Sign up</a></li>
           <li><a href="#!" class="btn btn--login">Login</a></li>
         </ul>
@@ -176,8 +182,10 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/main.js"></script>
 </body>
 
