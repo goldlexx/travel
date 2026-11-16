@@ -5,38 +5,29 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Travel project</title>
+  <title>GoTrip — Explore the world</title>
   <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
-  <meta name="author" content="Руслан Юлдашев" />
-  <meta name="description" content="Страница про путешествия" />
-  <meta name="keywords" content="Путешествия, travel" />
+  <meta name="author" content="Ruslan Yuldashev" />
+  <meta name="description" content="Explore destinations and travel inspiration with GoTrip." />
 </head>
 
-<body>
+<body id="top">
   <header class="header">
     <div class="container">
       <div class="header__top">
-        <nav class="nav">
+        <nav class="nav nav--header" aria-label="Main navigation">
           <div class="nav__logo">
-            <h2 class="logo"><a href="#!">GoTrip</a></h2>
+            <h2 class="logo"><a href="#top">GoTrip</a></h2>
           </div>
 
-          <ul class="nav__list nav__list--header">
-            <li><a href="#!" class="active">Home</a></li>
-            <li><a href="#!">Services</a></li>
-            <li><a href="#!">Pricing</a></li>
-            <li><a href="#!">Contact</a></li>
+          <ul class="nav__list nav__list--header" id="header-navigation">
+            <li><a href="#top" class="active">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
           </ul>
 
-          <ul class="nav__login nav__login--header">
-            <li><a href="#!">Sign up</a></li>
-            <li><a href="#!" class="btn btn--login">Login</a></li>
-          </ul>
-
-          <button type="button" class="nav__toggle">
+          <button type="button" class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="header-navigation">
             <div class="menu-icon-wrapper">
               <div class="menu-icon"></div>
             </div>
@@ -51,11 +42,11 @@
           <div class="header__text">
             <p>explore the beauty of god's earth in a beautiful forest and have fun</p>
           </div>
-          <a href="#!" class="btn btn--header">Explore Now</a>
+          <a href="#destinations" class="btn btn--header">Explore Now</a>
         </div>
 
         <div class="header__img">
-          <img src="./img/header/header-img.png" alt="Image" />
+          <img src="./img/header/header-img.png" alt="Tropical island landscape" />
         </div>
       </div>
     </div>
@@ -63,7 +54,7 @@
 
   <main class="">
 
-    <section class="destinations">
+    <section class="destinations" id="destinations">
       <div class="container-right">
         <div class="destinations__row">
           <div class="destinations__content">
@@ -74,20 +65,20 @@
             <div class="destinations__text">
               <p>explore the beauty of god's earth in a beautiful forest and have fun</p>
             </div>
-            <a href="#!" class="btn">Explore Now</a>
+            <a href="#reviews" class="btn">Explore Now</a>
           </div>
 
           <div class="destinations__slider">
             <div class="slider">
-              <div class="owl-carousel">
-                <img class="slider__item" src="./img/slider/01.jpg" alt="Slider item" />
-                <img class="slider__item" src="./img/slider/02.jpg" alt="Slider item" />
-                <img class="slider__item" src="./img/slider/03.jpg" alt="Slider item" />
+              <div class="slider__track">
+                <img class="slider__item" src="./img/slider/01.jpg" alt="Mountain destination" />
+                <img class="slider__item" src="./img/slider/02.jpg" alt="Coastal destination" />
+                <img class="slider__item" src="./img/slider/03.jpg" alt="Forest destination" />
               </div>
-              <button class="slider__btn slider__btn--prev">
+              <button type="button" class="slider__btn slider__btn--prev" aria-label="Previous destination">
                 <img src="./img/slider/arrow-left.svg" alt="" />
               </button>
-              <button class="slider__btn slider__btn--next">
+              <button type="button" class="slider__btn slider__btn--next" aria-label="Next destination">
                 <img src="./img/slider/arrow-right.svg" alt="" />
               </button>
             </div>
@@ -96,11 +87,11 @@
       </div>
     </section>
 
-    <section class="customers">
+    <section class="customers" id="reviews">
       <div class="container">
         <div class="customers__row">
           <div class="customers__img">
-            <img src="./img/customers/customers.jpg" alt="Customer" />
+            <img src="./img/customers/customers.jpg" alt="Traveler enjoying a scenic destination" />
           </div>
           <div class="customers__content">
             <h2 class="customers__title">What do customers say about&nbsp;us?</h2>
@@ -108,7 +99,7 @@
             <div class="review">
               <div class="review__client">
                 <div class="review__client-avatar">
-                  <img src="./img/customers//user-avatar.png" alt="Avatar" />
+                  <img src="./img/customers/user-avatar.png" alt="Reviewer Alpanasap" />
                 </div>
                 <div class="review__client-desc">
                   <h3 class="review__client-desc-name">Alpanasap</h3>
@@ -128,32 +119,17 @@
       </div>
     </section>
 
-    <section class="cta none">
-      <div class="container">
-        <div class="cta__plate">
-          <h2 class="cta__title">
-            Prepare Yourself And <br />
-            Start Exploring With Us.
-          </h2>
-
-          <div class="cta__text">
-            <p>There's the best discount for you today.</p>
-          </div>
-
-          <a href="#!" class="btn"> Get Started </a>
-        </div>
-      </div>
-    </section>
-
     <section class="subscribe">
       <div class="container">
-        <div class="subscribe__content">
+        <div class="subscribe__content" id="newsletter">
           <h2 class="subscribe__title">Subscribe To Our Newsletter</h2>
 
-          <form class="subscribe-form">
-            <input type="email" class="subscribe-form__input" placeholder="Yourmail@mail.com" />
-            <button class="btn btn--subscribe">Subscribe</button>
+          <form class="subscribe-form" aria-describedby="newsletter-note">
+            <label class="visually-hidden" for="newsletter-email">Email address</label>
+            <input id="newsletter-email" type="email" class="subscribe-form__input" placeholder="you@example.com" disabled />
+            <button type="button" class="btn btn--subscribe" disabled>Subscribe</button>
           </form>
+          <p id="newsletter-note">Newsletter sign-up is not connected in this static demo.</p>
         </div>
       </div>
     </section>
@@ -162,28 +138,21 @@
 
   <footer class="footer">
     <div class="container">
-      <nav class="nav nav--footer">
+      <nav class="nav nav--footer" aria-label="Footer navigation">
         <div class="nav__logo">
-          <h2 class="logo logo--footer"><a href="#!">GoTrip</a></h2>
+          <h2 class="logo logo--footer"><a href="#top">GoTrip</a></h2>
         </div>
 
         <ul class="nav__list nav__list--footer">
-          <li><a href="#!" class="active">Home</a></li>
-          <li><a href="#!">Services</a></li>
-          <li><a href="#!">Pricing</a></li>
-          <li><a href="#!">Contact</a></li>
-        </ul>
-
-        <ul class="nav__login nav__login--footer">
-          <li><a href="#!">Sign up</a></li>
-          <li><a href="#!" class="btn btn--login">Login</a></li>
+          <li><a href="#top" class="active">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
         </ul>
       </nav>
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

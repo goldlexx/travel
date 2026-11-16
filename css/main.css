@@ -259,6 +259,37 @@ body {
 	transition: 0.2s ease-in;
 }
 
+.slider__track {
+	display: flex;
+	gap: 20px;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+	overscroll-behavior-inline: contain;
+	scrollbar-width: none;
+}
+
+.slider__track::-webkit-scrollbar {
+	display: none;
+}
+
+.slider__track .slider__item {
+	flex: 0 0 min(80%, 335px);
+	scroll-snap-align: center;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
 .slider .center .slider__item {
 	margin-top: 0;
 	width: 380px;

@@ -1,41 +1,38 @@
-// Carousel
-const owl = $('.owl-carousel');
+const slider = document.querySelector('.slider__track');
+const previousButton = document.querySelector('.slider__btn--prev');
+const nextButton = document.querySelector('.slider__btn--next');
 
-owl.owlCarousel({
-	center: true,
-	loop: true,
-	margin: 20,
-	startPosition: 0,
-	items: 1,
-	responsive: {
-		540: {
-			items: 3,
-			startPosition: 1,
-		},
-		1200: {
-			items: 3,
-			margin: 30,
-		},
-	},
-});
+if (slider) {
+  const getScrollDistance = () => slider.clientWidth * 0.8;
 
-$('.slider__btn--prev').click(function () {
-	owl.trigger('prev.owl.carousel');
-});
+  previousButton?.addEventListener('click', () => {
+    slider.scrollBy({ left: -getScrollDistance(), behavior: 'smooth' });
+  });
 
+  nextButton?.addEventListener('click', () => {
+    slider.scrollBy({ left: getScrollDistance(), behavior: 'smooth' });
+  });
+}
 
-$('.slider__btn--next').click(function () {
-	owl.trigger('next.owl.carousel');
-});
-
-// Nav icon
-const navBtn = document.querySelector('.nav__toggle');
-const nav = document.querySelector('.nav')
+const navigation = document.querySelector('.nav--header');
+const navigationToggle = document.querySelector('.nav__toggle');
 const menuIcon = document.querySelector('.menu-icon');
 
-
-navBtn.onclick = function () {
-	nav.classList.toggle('nav--mobile')
-	menuIcon.classList.toggle('menu-icon--active');
-	document.body.classList.toggle('no-scroll');
+const closeNavigation = () => {
+  navigation?.classList.remove('nav--mobile');
+  menuIcon?.classList.remove('menu-icon--active');
+  navigationToggle?.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('no-scroll');
 };
+
+navigationToggle?.addEventListener('click', () => {
+  const isExpanded = navigationToggle.getAttribute('aria-expanded') === 'true';
+  navigation?.classList.toggle('nav--mobile', !isExpanded);
+  menuIcon?.classList.toggle('menu-icon--active', !isExpanded);
+  navigationToggle.setAttribute('aria-expanded', String(!isExpanded));
+  document.body.classList.toggle('no-scroll', !isExpanded);
+});
+
+navigation?.addEventListener('click', (event) => {
+  if (event.target.closest('a')) closeNavigation();
+});

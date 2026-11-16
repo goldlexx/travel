@@ -1,30 +1,20 @@
-## Описание:
+# GoTrip — travel landing page
 
-"Travel" - это типовой одностраничный сайт про путешествия.
+A static travel landing page with destination imagery, customer feedback, a responsive navigation menu, and a horizontally scrollable destination gallery. The newsletter form is intentionally disabled because no subscription service is connected.
 
+## Run locally
 
-| **GithHub Pages** | [Ссылка на GitHub Pages](https://goldlexx.github.io/travel/) |
-| ----------------- | -------------------------------------------------------------------- |
-
-## Технологии:
-
-* Html
-* CSS
-* Jquery
-* Owl Carousel
-
-
-## Инструкция по установке:
-
-```
+```sh
 git clone https://github.com/goldlexx/travel.git
+cd travel
 ```
 
-Запустите локальный сервер разработки с функцией перезагрузки в реальном времени для статических и динамических страниц - [How do you set up a local testing server? (MDN web docs)](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/set_up_a_local_testing_server)
+Open `index.html` in a browser or serve the repository root with a local static web server. No build step or JavaScript package installation is required.
 
-## Ссылка на макет:
+The published page is available at [GitHub Pages](https://goldlexx.github.io/travel/).
 
-[Макет в "Figma"](https://www.figma.com/file/w3Bb1v9Vq08lIoiIYLPegP/gotrip7?node-id=0%3A1)
+## Test
 
-
-
+```sh
+node --test
+```
