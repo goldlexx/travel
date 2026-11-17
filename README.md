@@ -1,20 +1,31 @@
-# GoTrip — travel landing page
+<div align="center">
 
-A static travel landing page with destination imagery, customer feedback, a responsive navigation menu, and a horizontally scrollable destination gallery. The newsletter form is intentionally disabled because no subscription service is connected.
+# 🌍 GoTrip
 
-## Run locally
+Статичный лендинг о путешествиях с галереей направлений и отзывами.
 
-```sh
-git clone https://github.com/goldlexx/travel.git
-cd travel
-```
+[![HTML](https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS3-1572b6?logo=css3&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-222?logo=github)](https://goldlexx.github.io/travel/)
 
-Open `index.html` in a browser or serve the repository root with a local static web server. No build step or JavaScript package installation is required.
+</div>
 
-The published page is available at [GitHub Pages](https://goldlexx.github.io/travel/).
+## Возможности
 
-## Test
+- блоки направлений и отзывов;
+- адаптивное меню;
+- горизонтальная галерея на узких экранах.
 
-```sh
-node --test
-```
+## Демонстрация
+
+[Открыть GoTrip](https://goldlexx.github.io/travel/)
+
+## Запуск
+
+Откройте `index.html` или используйте статичный HTTP-сервер. Форма рассылки отключена: сервис подписок не подключён.
+
+## Технологии
+
+HTML, CSS, JavaScript.
+
+## Лицензия
+
+Лицензия в репозитории не указана.
