@@ -1,31 +1,23 @@
 <div align="center">
 
-# 🌍 GoTrip
+# 🧭 GoTrip
 
-Статичный лендинг о путешествиях с галереей направлений и отзывами.
+**Туристический лендинг с горизонтальной галереей направлений и навигацией для небольших экранов.**
 
-[![HTML](https://img.shields.io/badge/HTML5-e34f26?logo=html5&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS](https://img.shields.io/badge/CSS3-1572b6?logo=css3&logoColor=fff)](https://developer.mozilla.org/en-US/docs/Web/CSS) [![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-222?logo=github)](https://goldlexx.github.io/travel/)
+![HTML](https://img.shields.io/badge/HTML-D94D27) ![CSS](https://img.shields.io/badge/CSS-5546A6) ![JavaScript](https://img.shields.io/badge/JavaScript-806900)
+
+[Открыть страницу](https://goldlexx.github.io/travel/)
 
 </div>
 
-## Возможности
+Из первого экрана можно перейти к направлениям и отзыву путешественника. Стрелки перемещают ленту фотографий, а мобильное меню закрывается после выбора раздела. Блок рассылки демонстрирует оформление формы. Сбор подписок отключён.
 
-- блоки направлений и отзывов;
-- адаптивное меню;
-- горизонтальная галерея на узких экранах.
+![Первый экран GoTrip с навигацией по направлениям](docs/interface.jpg)
 
-## Демонстрация
+## Локальный запуск
 
-[Открыть GoTrip](https://goldlexx.github.io/travel/)
+Откройте `index.html` из корня репозитория в браузере.
 
-## Запуск
+## Проверка
 
-Откройте `index.html` или используйте статичный HTTP-сервер. Форма рассылки отключена: сервис подписок не подключён.
-
-## Технологии
-
-HTML, CSS, JavaScript.
-
-## Лицензия
-
-Лицензия в репозитории не указана.
+`node --test` проверяет шаг прокрутки галереи и поведение мобильного меню.
